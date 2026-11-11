@@ -1,3 +1,14 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+
+// Obsidian Dataview / Tasks query blocks only work inside Obsidian.
+// Hide them on the website rather than showing raw query code.
+pre[data-language="dataview"],
+pre[data-language="dataviewjs"],
+pre[data-language="tasks"],
+figure:has(> pre[data-language="dataview"]),
+figure:has(> pre[data-language="dataviewjs"]),
+figure:has(> pre[data-language="tasks"]) {
+  display: none;
+}

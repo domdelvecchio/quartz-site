@@ -12,3 +12,7 @@ replit.nix
 .quartz/
 quartz/cli/tui/dist/
 .turbo/
+
+# Never commit vault content or build output to this PUBLIC repo
+content/
+public/
